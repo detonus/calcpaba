@@ -1,3 +1,3 @@
 # Example library: calcpaba
 
-This sample calculator library with tests (mockito)
+This is sample calculator library with tests (mockito)
