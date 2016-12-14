@@ -6,14 +6,18 @@ package pl.gov.coi.example.calc;
  */
 public class Calc {
 
+    private Addrer addrer;
+
+    public Calc () {
+        this(new Addrer42());
+    }
+
+    public Calc( Addrer addrer) {
+        this.addrer = addrer;
+    }
+
     public int add(int a, int b) {
-      if (a > b) {
-        return a + b;
-      } else if (b < a) {
-        return b + a;
-      } else {
-        return 2 * a;
-      }
+      return addrer.addd(a, b);
     }
     public int substract(int a, int b) {
         return a - b;
